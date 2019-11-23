@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Angular</h1>
+    <h2>{{authors.length +" "+title}}</h2>
+    <ul>
+      <li *ngFor="let a of authors">{{a}}</li>
+    </ul>
+    <span class="glyphicon"
+          [class.glyphicon-star] = "isActive"
+          [class.glyphicon-star-empty] = "!isActive"
+          (click) = "onClick()">
+    </span>
+  </body>
+</html>
