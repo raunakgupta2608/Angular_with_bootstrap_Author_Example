@@ -1,0 +1,10 @@
+
+This check for proposition and also changes to uppercase and lower case
+<input type="text" [(ngModel)]="title">
+<br>
+{{ title | titleCase }}
+<br>
+Example of $event : <button (click)="pressed($event)">Button</button>
+<br><br>
+Template variable example : <input #email (keyup.enter)="onKeyUp(email.value)">
+

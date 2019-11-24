@@ -1,0 +1,11 @@
+<span class ="glyphicon glyphicon-heart" 
+    [style.color]="color"
+    (click)="onClicked()">
+</span>
+<span class="text-like">{{ likes }}</span>
+
+<span class ="glyphicon glyphicon-heart" 
+    [class.highlighted]="isActive"
+    (click)="onClick()">
+</span>
+<span class="text-like">{{ likesCount }}</span>

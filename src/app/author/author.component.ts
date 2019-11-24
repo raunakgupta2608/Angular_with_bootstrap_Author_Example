@@ -8,16 +8,12 @@ import { AuthorService } from '../author.service';
 })
 export class AuthorComponent {
   title = 'authors';
-  isActive:boolean =false;
   authors;
 
   constructor(private service: AuthorService){
-
   }
+  
   ngOnInit(){
     this.authors = this.service.getAuthors();  
-  }
-  onClick(){
-      this.isActive = !this.isActive;
   }
 }

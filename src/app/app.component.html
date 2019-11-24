@@ -1,1 +1,8 @@
 <app-author></app-author>
+<title-case></title-case>
+<favourite [is-favourite]="post.isFavourite" (change)="favouriteChanged($event)"></favourite>
+<br><br><br>
+<heart-like
+    [likesCount] = "tweet.likesCount"
+    [isActive] = "tweet.isActive"
+></heart-like>
